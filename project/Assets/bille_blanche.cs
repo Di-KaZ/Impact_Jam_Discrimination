@@ -9,6 +9,14 @@ public class bille_blanche : MonoBehaviour
     public GameObject safe_zone;
     private Rigidbody2D body;
     private Vector2 goal;
+    private int status = 1;
+    void OnMouseDown()
+    {
+        if (status == 1)
+            status = 2;
+        else
+            status = 1;
+    }
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -36,7 +44,9 @@ public class bille_blanche : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        move_toward_safezone();
-        //move_randomly();
+        if (status == 1)
+            move_toward_safezone();
+        else
+            move_randomly();
     }
 }
