@@ -6,7 +6,7 @@ Des billes blanches vont apparaitre sur la map. Toutes vont converger vers le ce
 
 
 ## Le but
-Le but du jeu est de sauver toutes les billes blanches en les réunissant dans le cercle.
+Le but du jeu est de sauver toutes les billes en les réunissant dans le cercle.
 
 
 ## Le Gameplay
