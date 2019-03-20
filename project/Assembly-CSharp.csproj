@@ -53,8 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\bille_blanche.cs" />
-     <Compile Include="Assets\square_script.cs" />
+     <Compile Include="Assets\Background\Generate_People.cs" />
+     <Compile Include="Assets\People\People_AI.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/SeKaZ/Documents/GitHub/Impact_Jam_Discrimination/project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

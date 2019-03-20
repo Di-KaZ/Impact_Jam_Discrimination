@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Person
+  - Person_c
   layers:
   - Default
   - TransparentFX
