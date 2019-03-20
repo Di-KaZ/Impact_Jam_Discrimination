@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class random_movement : MonoBehaviour
+{
+    public float speed = 0.5f;
+    private Vector2 goal = new Vector2(2 * Random.Range(-1, 1), 2 * Random.Range(-1, 1));
+    private Rigidbody2D rigidBody;
+    // Start is called before the first frame update
+    void Start()
+    {
+        rigidBody = GetComponent<Rigidbody2D> ();
+    }
+
+    // Update is called once per frame
+    void change_goal()
+    {
+        goal = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+        CancelInvoke();
+    }
+    void Update()
+    {
+        InvokeRepeating("change_goal", 1f, 1f);
+    }
+
+    private void FixedUpdate()
+    {
+        rigidBody.MovePosition(rigidBody.position + goal * Time.fixedDeltaTime);
+    }
+}

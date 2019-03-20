@@ -8,16 +8,35 @@ public class bille_blanche : MonoBehaviour
     public GameObject w_circle;
     public GameObject safe_zone;
     private Rigidbody2D body;
-
+    private Vector2 goal;
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
     }
+    void move_toward_safezone()
+    {
+        float speedo = 0.01f;
+        transform.position = Vector2.MoveTowards(w_circle.transform.position, safe_zone.transform.position, speedo);
+    }
+    
+    void move_randomly_invoke()
+    {
+        goal = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+        CancelInvoke();
+    }
+
+    void move_randomly()
+    {
+        InvokeRepeating("move_randomly_invoke", 1f, 1f);
+        body.MovePosition(body.position + goal * Time.fixedDeltaTime);
+
+    }
     void Update()
     {
-//        Vector2 p_circle = GameObject.Find("w_circle").transform.position;
-//        Vector2 p_safe_zone = GameObject.Find("safe_zone").transform.position;
-        float speedo = 0.01f;
-         transform.position = Vector2.MoveTowards(w_circle.transform.position, safe_zone.transform.position, speedo);
+    }
+    private void FixedUpdate()
+    {
+        move_toward_safezone();
+        //move_randomly();
     }
 }
