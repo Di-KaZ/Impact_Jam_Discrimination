@@ -1,7 +1,7 @@
 # Impact_Jam_Discrimination
 
 
-##Le Jeu
+## Le Jeu
 Des billes blanches vont apparaitre sur la map. Toutes vont converger vers le cercle du milieu qui représente une zone de sécurité. Quelques billes noires vont apparaîtres et vont influencer la première bille blanche qu'ils rencontreront, la bille blanche deviendra à son tour une bille noire. Les billes noires ne convergent pas vers le centre mais peuvent se déplacer de façon random sur la map.
 
 
