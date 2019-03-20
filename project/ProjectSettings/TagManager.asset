@@ -41,6 +41,9 @@ TagManager:
   - name: Background
     uniqueID: 207103167
     locked: 0
+  - name: Safezone
+    uniqueID: 1055378477
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
