@@ -22,6 +22,15 @@ public class bille_blanche : MonoBehaviour
         goal = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
         body = GetComponent<Rigidbody2D>();
     }
+    
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Wall")
+            goal = new Vector2(goal.x * -1, goal.y * -1);
+        if (col.gameObject.tag == "Person") {
+            Debug.Log("mdr");
+        }
+    }
     void move_toward_safezone()
     {
         float speedo = 0.01f;
