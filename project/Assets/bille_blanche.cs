@@ -19,6 +19,7 @@ public class bille_blanche : MonoBehaviour
     }
     void Start()
     {
+        goal = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
         body = GetComponent<Rigidbody2D>();
     }
     void move_toward_safezone()
@@ -39,6 +40,12 @@ public class bille_blanche : MonoBehaviour
         body.MovePosition(body.position + goal * Time.fixedDeltaTime);
 
     }
+
+    void OnTriggerEnter()
+    {
+        goal = new Vector2(goal.x * -1, goal.y * -1);
+    }
+
     void Update()
     {
     }

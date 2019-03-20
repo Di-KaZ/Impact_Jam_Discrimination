@@ -11,7 +11,7 @@ public class square_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0;i < 100; i++) {
+        for (int i = 0; i < 100; i++) {
             x = Random.Range(-10.0f, 10.0f);
             y = Random.Range(-10.0f, 10.0f);
             Instantiate(circle, new Vector2(x, y), Quaternion.identity);
