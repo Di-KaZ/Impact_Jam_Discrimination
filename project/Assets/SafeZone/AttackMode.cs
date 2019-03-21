@@ -26,7 +26,7 @@ public class AttackMode : MonoBehaviour
                 }
                 return;
         }
-        if ((Bad_Persons.Length / Good_Person.Length) * 100 >= 70) {
+        else if ((Bad_Persons.Length / Good_Person.Length) * 100 >= 70) {
             for (int i = 0; i != Bad_Persons.Length; i += 1) {
                 Bad_Persons[i].tag = "Person_c_attack";
             }
