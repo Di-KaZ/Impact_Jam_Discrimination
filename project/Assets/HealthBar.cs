@@ -5,11 +5,14 @@ using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     private Transform bar;
+    private GameObject Bg;
+    private GameObject Border;
+    private GameObject BarSprite;
     // Start is called before the first frame update
     void Start()
     {
         bar = transform.Find("Bar");
-       bar.localScale = new Vector3(1f, 1f);
+        bar.localScale = new Vector3(1f, 1f);
     }
 
     public void SetSize(float size)

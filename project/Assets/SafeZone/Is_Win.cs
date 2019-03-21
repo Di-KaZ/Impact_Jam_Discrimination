@@ -13,7 +13,7 @@ public class Is_Win : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Person") {
+        if (col.gameObject.tag == "Person"  || col.gameObject.tag == "Person_s") {
             How_Many_Saved += 1;
             col.gameObject.tag = "Person_s";
         }

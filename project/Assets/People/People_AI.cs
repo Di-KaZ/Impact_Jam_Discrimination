@@ -14,6 +14,7 @@ public class People_AI : MonoBehaviour
     private float timer_walk_random = 0.0f;
     private float beofre_change_dir = 1f;
     private float speed = 0.005f;
+    [SerializeField] private GameObject Bobble_ref;
 
     void OnMouseDown()
     {
@@ -48,15 +49,8 @@ public class People_AI : MonoBehaviour
     
     void OnTriggerStay2D(Collider2D col)
     {
-        int[] greyShade = {255, 150, 0};
-
         if (this.tag == "Person" && (col.gameObject.tag == "Person_c" || col.gameObject.tag == "Person_c_attac") && timer_beofre_next_contamination >= 2.0f) {
             contamination_state += 1;
-            if (contamination_state > 2)
-                contamination_state = 2;
-            this.GetComponent<SpriteRenderer>().color = new Color(greyShade[contamination_state],
-                                                                  greyShade[contamination_state],
-                                                                  greyShade[contamination_state]);
             timer_beofre_next_contamination -= 3.0f;
         }
     }
@@ -97,14 +91,18 @@ public class People_AI : MonoBehaviour
     {
         timer_beofre_next_contamination += Time.deltaTime;
         timer_walk_random += Time.deltaTime;
+        transform.Find("Bobble").GetComponent<SpriteRenderer>().enabled = false;
         if(this.tag == "Person_c" || this.tag == "Person_c_attack") {
             this.GetComponent<BoxCollider2D>().isTrigger = false;
+            transform.Find("Bobble").position = new Vector2(this.transform.position.x + .5f, this.transform.position.y + .5f);
+            transform.Find("Bobble").GetComponent<SpriteRenderer>().enabled = true;
         }
         else
             this.GetComponent<BoxCollider2D>().isTrigger = true;
-        if (contamination_state >= 2) {
+        if (contamination_state >= 4) {
             contamination_state = 0;
-           this.tag = "Person_c";
+            this.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
+            this.tag = "Person_c";
         }
     }
 
