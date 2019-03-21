@@ -9,6 +9,8 @@ TagManager:
   - Person_c
   - Person_s
   - Person_c_attack
+  - Timer
+  - Safe_Zone
   layers:
   - Default
   - TransparentFX

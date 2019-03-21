@@ -6,7 +6,7 @@ public class GetAttacked : MonoBehaviour
 {
     [SerializeField] private HealthBar healthBar;
     private float time = 0.0f;
-    private float life = 1.0f;
+    public float life = 1.0f;
     // Update is called once per frame
 
     void OnCollisionStay2D(Collision2D col) {

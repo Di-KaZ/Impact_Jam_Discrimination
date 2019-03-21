@@ -36,7 +36,9 @@ public class Is_Win : MonoBehaviour
                 Last_Person[i].tag = "Person_s";
             }
         }
-        if (How_Many_Saved == 50)
+        if (How_Many_Saved == 50) {
+            GameObject.FindGameObjectWithTag("Timer").GetComponent<timer_script>().is_stop = true;
             Debug.Log("You Win !");
+        }
     }
 }

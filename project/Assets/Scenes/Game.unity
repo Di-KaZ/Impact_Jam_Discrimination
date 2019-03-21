@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.911093
+  orthographic size: 9.503695
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 595652971}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 201}
+  m_AnchoredPosition: {x: -337, y: 445}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595652971
@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 595652972}
+  is_stop: 0
 --- !u!114 &595652972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 369202468}
+  life: 1
 --- !u!1001 &1867952272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -958,6 +960,11 @@ PrefabInstance:
     - target: {fileID: 6008364961726603511, guid: c3ac37ec44d43f24aaae6fecdc50ed4c,
         type: 3}
       propertyPath: m_Name
+      value: Safe_Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008364961726603511, guid: c3ac37ec44d43f24aaae6fecdc50ed4c,
+        type: 3}
+      propertyPath: m_TagString
       value: Safe_Zone
       objectReference: {fileID: 0}
     - target: {fileID: 6008364961726603464, guid: c3ac37ec44d43f24aaae6fecdc50ed4c,
