@@ -54,8 +54,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Background\Generate_People.cs" />
-     <Compile Include="Assets\Is_Win.cs" />
+     <Compile Include="Assets\HealthBar.cs" />
      <Compile Include="Assets\People\People_AI.cs" />
+     <Compile Include="Assets\SafeZone\AttackMode.cs" />
+     <Compile Include="Assets\SafeZone\GetAttacked.cs" />
+     <Compile Include="Assets\SafeZone\Is_Win.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/SeKaZ/Documents/GitHub/Impact_Jam_Discrimination/project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

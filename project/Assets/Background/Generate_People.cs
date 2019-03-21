@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Generate_People : MonoBehaviour
 {
-    public GameObject circle;
+    public Transform People;
     private float x = 0;
     private float y = 0;
 
@@ -12,9 +12,9 @@ public class Generate_People : MonoBehaviour
     void Start()
     {
         for (int i = 0; i < 50; i++) {
-            x = Random.Range(-10.0f, 10.0f);
-            y = Random.Range(-10.0f, 10.0f);
-            Instantiate(circle, new Vector2(x, y), Quaternion.identity);
+            x = Random.Range(-8.0f, 8.0f);
+            y = Random.Range(-8.0f, 8.0f);
+            Instantiate(People, new Vector2(x, y), Quaternion.identity);
         }
     }
 
