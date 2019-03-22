@@ -11,7 +11,7 @@ public class displayScore : MonoBehaviour
     void Start()
     {
         float time = PlayerPrefs.GetFloat("Score");
-        if (time > PlayerPrefs.GetFloat("High Score", 0))
+        if (time < PlayerPrefs.GetFloat("High Score", 0))
         {
             PlayerPrefs.SetFloat("High Score", time);
         }
@@ -24,6 +24,6 @@ public class displayScore : MonoBehaviour
         string secondsH = (PlayerPrefs.GetFloat("High Score", 0) % 60).ToString("f2");
         string minutes = ((int)PlayerPrefs.GetFloat("Score", 0) / 60).ToString();
         string seconds = (PlayerPrefs.GetFloat("Score", 0) % 60).ToString("f2");
-        timer.text = "Your Time : " + minutes + ":" + seconds + " Best Time : " + minutesH + ":" + secondsH;
+        timer.text = "Your Time : " + minutes + ":" + seconds + "\nBest Time : " + minutesH + ":" + secondsH;
     }
 }
