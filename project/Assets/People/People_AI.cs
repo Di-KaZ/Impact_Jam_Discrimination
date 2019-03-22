@@ -20,8 +20,8 @@ public class People_AI : MonoBehaviour
     {
         if (this.tag == "Person_c" || this.tag == "Person_c_attack") {
             this.tag = "Person";
+            this.GetComponent<Animator>().SetBool("Bad", false);
             contamination_state = 0;
-            this.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
         }
     }
     void Start()
@@ -30,8 +30,15 @@ public class People_AI : MonoBehaviour
         goal = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
         body = GetComponent<Rigidbody2D>();
         this.tag = tags[UnityEngine.Random.Range(0, 10)];
-        if (this.tag == "Person_c")
-            this.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
+        if (this.tag == "Person_c") {
+            this.GetComponent<Animator>().SetInteger("wich", UnityEngine.Random.Range(0, 5));
+            this.GetComponent<Animator>().SetBool("Bad", true);
+
+        }
+        else {
+            this.GetComponent<Animator>().SetInteger("wich", UnityEngine.Random.Range(0, 5));
+            this.GetComponent<Animator>().SetBool("Bad", false);
+        }
     }
     
     void increment_contamination()
@@ -101,8 +108,8 @@ public class People_AI : MonoBehaviour
             this.GetComponent<BoxCollider2D>().isTrigger = true;
         if (contamination_state >= 4) {
             contamination_state = 0;
-            this.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
             this.tag = "Person_c";
+            this.GetComponent<Animator>().SetBool("Bad", true);
         }
     }
 
@@ -110,17 +117,33 @@ public class People_AI : MonoBehaviour
     {
         if (this.tag == "Person") {
             speed = 0.005f;
+            float angle = Mathf.Atan2(safe_zone.transform.position.y, safe_zone.transform.position.x) * Mathf.Rad2Deg;
+            angle -= 90;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             move_toward_safezone();
         }
         else if (this.tag == "Person_s") {
             speed = 0.1f;
+            
+            float angle = Mathf.Atan2(safe_zone.transform.position.y, safe_zone.transform.position.x) * Mathf.Rad2Deg;
+            angle -= 90;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             move_toward_safezone();
         }
         else if (this.tag == "Person_c_attack") {
             speed = 0.03f;
+            
+            float angle = Mathf.Atan2(goal.y, goal.x) * Mathf.Rad2Deg;
+            angle -= 90;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             move_toward_safezone();
         }
-        else
+        else {
+            
+            float angle = Mathf.Atan2(goal.y, goal.x) * Mathf.Rad2Deg;
+            angle -= 90;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             move_randomly();
+        }
     }
 }
