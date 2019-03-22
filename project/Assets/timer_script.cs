@@ -8,10 +8,12 @@ public class timer_script : MonoBehaviour
     [SerializeField] private Text timer;
     private float startTime;
     public bool is_stop = false;
+    public float t;
     // Start is called before the first frame update
     void Start()
     {
         startTime = Time.time;
+        PlayerPrefs.SetFloat("Score", 0);
     }
 
     public void stop_time()
@@ -22,10 +24,10 @@ public class timer_script : MonoBehaviour
     void Update()
     {
         if (GameObject.FindGameObjectWithTag("Safe_Zone").GetComponent<GetAttacked>().life > 0 && is_stop == false) {
-            float t = Time.time - startTime;
+            PlayerPrefs.SetFloat("Score", Time.time - startTime);
 
-            string minutes = ((int) t / 60).ToString();
-            string seconds = (t % 60).ToString("f2");
+            string minutes = ((int)PlayerPrefs.GetFloat("Score", 0) / 60).ToString();
+            string seconds = (PlayerPrefs.GetFloat("Score", 0) % 60).ToString("f2");
 
             timer.text = "Timer : " + minutes + ":" + seconds;
         }

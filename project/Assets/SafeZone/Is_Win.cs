@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Is_Win : MonoBehaviour
 {
@@ -38,7 +40,7 @@ public class Is_Win : MonoBehaviour
         }
         if (How_Many_Saved == 35) {
             GameObject.FindGameObjectWithTag("Timer").GetComponent<timer_script>().is_stop = true;
-            Debug.Log("You Win !");
+            SceneManager.LoadScene("Score_Screen");
         }
     }
 }
