@@ -1,17 +1,12 @@
-# Impact_Jam_Discrimination
+# Don't Sway my Gooz !
 
 
 ## Le Jeu
-Des billes blanches vont apparaitre sur la map. Toutes vont converger vers le cercle du milieu qui représente une zone de sécurité. Quelques billes noires vont apparaîtres et vont influencer la première bille blanche qu'ils rencontreront, la bille blanche deviendra à son tour une bille noire. Les billes noires ne convergent pas vers le centre mais peuvent se déplacer de façon random sur la map.
-
+Bienvenue à Goozland ! Petite planète se trouvant aux premiers feux à droite de Saturne. Les habitants de cette planète, les Gooz, sont un peuple vivant en harmonie dans le meilleur des mondes. Un monde où il n'y a aucune discrimination, aucun racisme, sexisme ou homophobie. Le but ultime de cette population est d'atteindre le cercle de paix pour être un Gooz accompli et heureux. Tout Gooz peut y parvenir! Néanmoins on peut trouver des malfaiteurs parmi cette gentille population bienveillante. On les appelle les Baduz ! Leur unique but est d'apporter la discorde au sein de Goozland en apportant des idées sombres et malfaisantes envers leurs camarades. Étant un peuple sans préjugé les Gooz font confiance à tout le monde et se laissent influencer par les Baduz, ils deviennent à leur tour Baduz et vont influencer le reste de la population. Si les Baduz sont trop nombreux alors le chemin des Gooz vers le cercle de paix n'a plus la même signification. Ce lieu représentant un paradis devient un refuge pour les pauvres petits Gooz qui cherchent à fuir les Baduz. Il faut savoir que chaque Baduz était un Gooz auparavant. Votre rôle à vous jeune héros est donc de chasser les idées sombres de la tête de nos petits amis en luttant contre les oppresseurs et en leurs redonnant cette belle vision de la vie.
 
 ## Le but
-Le but du jeu est de sauver toutes les billes en les réunissant dans le cercle.
+Le but du jeu est de sauver tous les Gooz en les réunissant dans le cercle de paix.
 
 
 ## Le Gameplay
-Pour empêcher la propagation des idées sombre qu'apportent les billes noires il va falloir cliquer rapidement dessus. Celles-ci vont s'éclaircir et finalement redevenir blanches et reprendre leurs routes vers le cercle de paix. Si le pourcentage de billes noires est supérieur aux billes blanches alors le cercle de paix qui est vert devient rouge et les billes noires vont se mettre à attaquer le cercle tant qu'il est rouge. Le joueur devra donc se presser de cliquer sur les billes noires pour rapidement changer leurs couleurs.
-
-
-## Discrimination
-La discrimination est le fait de distinguer les choses les unes des autres. Le fait de séparer un groupe des autres en le traitant plus mal. Dans le cas de notre jeu on distingue deux couleurs. L'une influence l'autre avec de mauvaise idées, ce sont les billes noires. Ainsi les mauvaises idées se propagent et influencent les billes blanches, celles-ci vont devenir noir à leur tour. En convergeant vers le centre les billes blanches se rendent simplement dans un point commun ou elles seront dans un espace de paix. Si à l'extérieur du cercle le pourcentage de billes noires est supérieur aux billes blanches alors les billes blanches déjà présentes dans les cercles seront attaquées par les billes noires. Cette zone deviendra donc un refuge pour un groupe oppressé. Le joueur quand as lui doit tout faire pour que la zone n'est plus un refuge mais redevient un lieu de paix. Le joueur va donc lutter contre le groupe d'oppresseurs.
+Pour empêcher la propagation des idées sombres qu'apportent les Baduz il va falloir cliquer rapidement dessus pour les faire redevenir Gooz. En redevenant Gooz ils vont reprendre leur route vers le cercle de paix. Si le pourcentage de Baduz est supérieur aux Gooz alors le cercle de paix qui est vert deviendra rouge et les Baduz vont se mettre à attaquer le cercle. Le joueur devra donc se presser de cliquer sur les méchants Baduz pour rapidement changer leurs couleurs.
