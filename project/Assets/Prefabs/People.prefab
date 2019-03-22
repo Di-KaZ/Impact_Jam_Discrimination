@@ -121,8 +121,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8383368124182915831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.1597, y: 8.7609, z: 0}
-  m_LocalScale: {x: 1.2455018, y: 1.2455018, z: 6.227509}
+  m_LocalPosition: {x: -7.9798, y: 8.8399, z: 0}
+  m_LocalScale: {x: 1.7906579, y: 1.7906579, z: 8.95329}
   m_Children:
   - {fileID: 4083364874565338505}
   m_Father: {fileID: 0}
@@ -214,16 +214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6956d120399e7304998dced0ef19bbeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_Person:
-  - {fileID: 7400000, guid: ca56b775642853147a87de75d9991ccd, type: 2}
-  - {fileID: 7400000, guid: 9eddac2e3178aaa49b016c9b35590ce4, type: 2}
-  - {fileID: 7400000, guid: ca56b775642853147a87de75d9991ccd, type: 2}
-  - {fileID: 7400000, guid: 9eddac2e3178aaa49b016c9b35590ce4, type: 2}
-  - {fileID: 7400000, guid: ca56b775642853147a87de75d9991ccd, type: 2}
-  - {fileID: 7400000, guid: 9eddac2e3178aaa49b016c9b35590ce4, type: 2}
-  controller_Person_c:
-  - {fileID: 7400000, guid: ca56b775642853147a87de75d9991ccd, type: 2}
-  - {fileID: 7400000, guid: ca56b775642853147a87de75d9991ccd, type: 2}
   movementSpeed: 1
   safe_zone: {fileID: 6008364961726603465, guid: c3ac37ec44d43f24aaae6fecdc50ed4c,
     type: 3}
