@@ -24,6 +24,6 @@ public class displayScore : MonoBehaviour
         string secondsH = (PlayerPrefs.GetFloat("High Score", 0) % 60).ToString("f2");
         string minutes = ((int)PlayerPrefs.GetFloat("Score", 0) / 60).ToString();
         string seconds = (PlayerPrefs.GetFloat("Score", 0) % 60).ToString("f2");
-        timer.text = "Your Time : " + minutes + ":" + seconds + "\nBest Time : " + minutesH + ":" + secondsH;
+        timer.text = "Your Time : " + minutes + ":" + seconds + "\n\n\n\n\n\n\n\n\nBest Time : " + minutesH + ":" + secondsH;
     }
 }
